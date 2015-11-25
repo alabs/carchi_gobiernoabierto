@@ -50,7 +50,6 @@
 }
 
 nav#nav_top{
-	display:none; /*Se oculto la barra de menú superior*/
 	@include opensans();
 	background-color: $blueDarkNav;
 	.navbar{
@@ -434,12 +433,13 @@ nav#nav_bottom{
 					a{
 						@include opensans(13px,normal);
 						border-bottom: 1px solid #ffffff;
-						color: $blueMenuLinks;
+						color: $blueLinksHover;
 						display: block;
 						margin: 0;
 						padding: 3px 0;
 
 						&:hover{
+							color: white;
 							background-color: $bgHover;
 							text-decoration: none;
 						}
