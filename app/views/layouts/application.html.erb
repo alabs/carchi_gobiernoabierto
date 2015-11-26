@@ -21,7 +21,7 @@
   <meta name="csrf-param" content="authenticity_token" />
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=1210">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= "#{I18n.t('site.title', :site_name => Settings.site_name, :publisher_name => Settings.publisher[:name])} :: #{(@title || @title_for_head || Settings.site_name).strip_html}" %></title>
   
   <link rel="shortcut icon" href="<%= asset_path('favicon.png') %>"/>  
