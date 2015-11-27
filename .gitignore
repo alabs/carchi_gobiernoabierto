@@ -7,3 +7,5 @@ doc/
 .yardoc/
 config/database.yml
 config/secrets.yml
+passenger.3000.pid
+passenger.3000.pid.lock
