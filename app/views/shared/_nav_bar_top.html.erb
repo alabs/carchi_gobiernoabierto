@@ -11,15 +11,15 @@
               <% end %>
             </ul>
           </li>
-          <li>
+          <!-- li>
             <%= link_to t('site.about', :site_name => Settings.site_name), page_site_path(:label => "about") %>
-          </li>
+          </li -->
           <li>
             <%= link_to 'Contacto', contact_site_path %>
           </li>
-          <li>
+          <!-- li>
             <%= link_to t('site.Ayuda'), page_site_path(:label => "help") %>
-          </li> 
+          </li --> 
           <li class='nav_search'>
             <%= link_to raw("<span>#{t('search.title')}</span>"), new_search_url, :class => 'search_label' %>
             <%= form_tag search_index_path, :class => 'navbar-search search_form', :style => 'display:none' do %>

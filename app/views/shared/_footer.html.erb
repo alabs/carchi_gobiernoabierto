@@ -37,10 +37,13 @@
       </div>
       <div class='span3'>
         <h2 class='footer_title'><%= t('site.about', :site_name => Settings.site_name) %></h2>
-        <ul class='nav nav-list'>
+        <!-- ul class='nav nav-list'>
           <% Page.about_pages.each do |page| %>
             <li><%= link_to page[:title], page_site_path(page[:label]) %></li>
           <% end %>
+        </ul -->
+        <ul class='nav nav-list'>
+          <li><%= link_to "Código fuente", "http://github.com/alabs/carchi_gobiernoabierto" %></li>
         </ul>
 
         <%- cc_url = "http://creativecommons.org/licenses/by/3.0/es/#{'/deed.eu' if I18n.locale.eql?(:eu)}" -%>

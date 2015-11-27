@@ -5,7 +5,7 @@
 
   <p>
     <%= I18n.t('notifier.proposal_rejection.rechazada', :title => @proposal.title, :url => url_for(:controller => "proposals", :action => "show", :id => @proposal.to_param, :locale => locale, :only_path => false), :site_name => Settings.site_name, :locale => locale) %><br />
-    <%= page_site_url(:label => "how_to_participate", :locale => locale) %>
+    <%# page_site_url(:label => "how_to_participate", :locale => locale) %>
   </p>
 
   <p>
