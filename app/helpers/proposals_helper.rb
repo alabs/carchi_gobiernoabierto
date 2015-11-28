@@ -27,7 +27,7 @@ module ProposalsHelper
   def render_zuzenean_banner_advice
     inner = []
     inner << content_tag(:div, t('proposals.advice_zuzenean'), :class => 'advice')
-    inner << content_tag(:div, link_to(image_tag("banners/zuzenean_#{I18n.locale.to_s}.jpg"), "http://www.zuzenean.euskadi.net/s68-home/#{locale_es_or_eu}", :rel => 'external'), :class => 'banner_image')
+    inner << content_tag(:div, link_to(image_tag("banners/atencionciudadana.png"), "https://atencionciudadana.carchi.gob.ec/", :rel => 'external'), :class => 'banner_image')
     content_tag(:div, inner.join.html_safe, :class => 'banner_aside zuzenean')
   end
 
