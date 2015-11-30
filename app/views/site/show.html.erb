@@ -94,11 +94,11 @@
 </div>
 
 <div class='section container multimedia tab-content'>  
-  <div id="home_videos" class="tab-pane active">
+  <!-- div id="home_videos" class="tab-pane">
     <%= render :partial => '/shared/grid_items', :locals => {:items => @videos.to_a.compact, :in_groups_of => 4} %>
-  </div>
+  </div -->
   
-  <div id="home_photos" class="tab-pane">
+  <div id="home_photos" class="tab-pane active">
     <%= render :partial => '/shared/grid_items', :locals => {:items => @albums.to_a.compact, :in_groups_of => 4} %>
   </div>
 </div>
