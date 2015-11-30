@@ -327,7 +327,9 @@ class Debate < ActiveRecord::Base
   end
 
   def set_default_image
-    last_indices = (Debate.order("updated_at DESC") - [self]).map{|a| a.cover_image.url.match(/.*([0-9]).jpg/)[1] if a.cover_image.present? && a.cover_image.url.match(/default/)}.compact
+    #last_indices = (Debate.order("updated_at DESC") - [self]).map{|a| a.cover_image.url.match(/.*([0-9]).jpg/)[1] if a.cover_image.present? && a.cover_image.url.match(/default/)}.compact
+    # apereira - bad fix for carchi prod
+    last_indices = ["0"] 
     # puts "LAST INDEXES #{last_indexs.inspect}"
     index = last_indices.empty? ? 0 : last_indices.first.to_i + 1
     index = (index > 3) ? 0 : index
