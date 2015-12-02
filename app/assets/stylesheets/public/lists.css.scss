@@ -67,10 +67,15 @@ ul.std_list{
 
 	&.drop_list{
 		position: relative;
+		& > :hover {
+			a {
+				color: white;
+			}
+		}
 		li.item{
 			line-height: 16px;
-
 			.item_content{
+
 				.title{
 					clear:both;
 					float: left;
