@@ -74,15 +74,15 @@ module OpenIrekia
     # Strong parameters
     config.action_controller.action_on_unpermitted_parameters = :raise
 
-    config.middleware.insert_before Rack::Runtime, Rack::URISanitizer
-    config.middleware.use ExceptionNotification::Rack, 
-      :email => {
-        :email_prefix => "[OpenIrekia #{Rails.env} Error] ",
-        :sender_address => '"OpenIrekia Error" <openirekia@gobiernoabierto.carchi.gob.ec>',
-        :exception_recipients => %w(debug@alabs.org)
-      }
-    # Email errors raised in rake tasks
-    ExceptionNotifier::Rake.configure
+    #config.middleware.insert_before Rack::Runtime, Rack::URISanitizer
+    #config.middleware.use ExceptionNotification::Rack, 
+    #  :email => {
+    #    :email_prefix => "[OpenIrekia #{Rails.env} Error] ",
+    #    :sender_address => '"OpenIrekia Error" <openirekia@gobiernoabierto.carchi.gob.ec>',
+    #    :exception_recipients => %w(debug@alabs.org)
+    #  }
+    ## Email errors raised in rake tasks
+    #ExceptionNotifier::Rake.configure
 
   end
 

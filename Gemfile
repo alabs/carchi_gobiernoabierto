@@ -27,8 +27,8 @@ gem 'rails_autolink'
 ## Other gems
 gem 'carrierwave'
 gem "paperclip", "4.1.1"
-gem 'exception_notification', '4.0.1'
-gem 'exception_notification-rake', '~> 0.1.2'
+#gem 'exception_notification', '4.0.1'
+#gem 'exception_notification-rake', '~> 0.1.2'
 gem 'will_paginate', '3.0.5'
 gem 'traco'
 gem 'acts-as-taggable-on', path: './lib/acts-as-taggable-on'
