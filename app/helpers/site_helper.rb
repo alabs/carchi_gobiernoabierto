@@ -189,6 +189,8 @@ module SiteHelper
         end
       end
       preview_img = File.exists?(video_preview_file) ? video_preview_url : default_img
+    elsif item.youtube_id?
+      preview_img = "http://img.youtube.com/vi/#{item.youtube_id}/mqdefault.jpg"
     else
       preview_img = default_img
     end

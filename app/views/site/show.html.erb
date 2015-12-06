@@ -82,10 +82,10 @@
   <div class='row-fluid'>
     <div class='span12 tabs_container'>
       <ul class="nav nav-tabs nav_middle_tabs home_tabs" id="photo_video_tabs">
-        <!-- li class="active">
-          <%= link_to Video.model_name.human(:count => 2).capitalize, '#home_videos' %>
-        </li -->
         <li class="active">
+          <%= link_to Video.model_name.human(:count => 2).capitalize, '#home_videos' %>
+        </li>
+        <li>
           <%= link_to Photo.model_name.human(:count => 2).capitalize, '#home_photos' %>
         </li>
       </ul>
@@ -94,11 +94,11 @@
 </div>
 
 <div class='section container multimedia tab-content'>  
-  <!-- div id="home_videos" class="tab-pane">
+  <div id="home_videos" class="tab-pane active">
     <%= render :partial => '/shared/grid_items', :locals => {:items => @videos.to_a.compact, :in_groups_of => 4} %>
-  </div -->
+  </div>
   
-  <div id="home_photos" class="tab-pane active">
+  <div id="home_photos" class="tab-pane">
     <%= render :partial => '/shared/grid_items', :locals => {:items => @albums.to_a.compact, :in_groups_of => 4} %>
   </div>
 </div>
