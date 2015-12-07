@@ -2,7 +2,7 @@
 site_name: El Carchi
 publisher:
   name: Prefectura del Carchi
-  address: 
+  address: "Calle 10 de Agosto entre Sucre y Olmedo, Tulcán"
 email_addresses:
   from: no-contestar@carchi.gob.ec
   contact: no-contestar@carchi.gob.ec
@@ -18,4 +18,5 @@ optional_modules:
   debates: true
   streaming: true
   headlines: true
-  customized: false
+  customized: true
+customized: true

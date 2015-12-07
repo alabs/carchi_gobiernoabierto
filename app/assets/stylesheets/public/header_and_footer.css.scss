@@ -71,7 +71,6 @@ nav#nav_top{
 	}
 
 	.navbar .nav > li {
-		border-left: 1px solid $borderItemMenu;
 		position: relative;
 
 		& > a {
@@ -145,7 +144,6 @@ nav#nav_top{
 	.nav_settings{
 		display: inline-block;
 		float: left;
-		border-right: 1px solid $borderItemMenu;
 
 		& > a{
 
@@ -580,7 +578,7 @@ footer {
 	background-image: url(image-path("#"));
 	background-position: 50% 25%;
 	background-repeat: no-repeat;
-	background-color: #f6a21f;
+	background-color: #75868c;
 	padding: 30px 0 0 0;
 
 	#site_links{
@@ -625,6 +623,7 @@ footer {
 
 	.footer_title{
 			border-bottom: 1px solid #ffffff;
+			color: white;
 			padding-bottom: 5px;
 			@include opensans(14px,bold);
 			line-height: inherit;
@@ -650,6 +649,7 @@ footer {
 		}
 	}
 	#copyright{
+		color: white;
 		text-align: center;
 		padding: 10px 0;
 		border-top: 1px solid $colorLines;
@@ -658,8 +658,12 @@ footer {
 			font-size: 12px;
 		}
 		.powered_by {
+			color:white; 
 			float:right;
 			font-size: 12px;
+			a {
+				color:white;
+			}
 		}
 		.logo{
 			clear: both;
@@ -672,3 +676,9 @@ footer {
 		}
 	}
 }
+
+.nav-list > li > a, .nav-list .nav-header {
+	text-shadow: none;
+	color: white;
+}
+
