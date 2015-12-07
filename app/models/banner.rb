@@ -34,7 +34,9 @@ class Banner < ActiveRecord::Base
                                     :content_type => ['image/jpg', 'image/jpeg', 'image/pjpeg', 'image/png', 'image/x-png', 'image/gif']
   validates_attachment_content_type :logo_en, :message => "no es un tipo de fichero válido",
                                     :content_type => ['image/jpg', 'image/jpeg', 'image/pjpeg', 'image/png', 'image/x-png', 'image/gif']
-  validate :banner_size_valid?
+
+  # apereira: deshabilitando para carchi, parece que no funciona bien la validación, aunque tenga ese tamaño exacto sigue dando error
+  #validate :banner_size_valid?
   
   def banner_size_valid?
     begin
