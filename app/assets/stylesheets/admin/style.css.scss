@@ -1213,8 +1213,13 @@ div.sadmin_doc_list ul {
  list-style: none;
 }
 
+div.video_preview4admin {
+  float: left;
+}
+
 div.video_info4admin {
-  margin-left: 420px;
+  float: left;
+  margin-left: 50px;
 }
 
 div.video_embed_block {

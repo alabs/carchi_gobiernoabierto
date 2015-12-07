@@ -57,7 +57,7 @@
           <% end %>
           
           <div style="display:none;" class="embed_container">
-            <textarea readonly="readonly" cols="45" rows="3"><%= render(:partial => "/shared/code_to_embed_video.html", :locals => {:video_info => video_info}).gsub(/\n/, '') %></textarea>                       
+            <textarea readonly="readonly" cols="45" rows="3"><%= render(:partial => "/shared/code_to_embed_video.html", :locals => {:video => @video}).gsub(/\n/, '') %></textarea>                       
           </div>       
         </div>
 

@@ -8,7 +8,7 @@
     <div class='category_main category_video'>
       <div class='row-fluid'>
         <div class='category_image span6'>
-          <%= link_to image_tag(document_img_tag(video_preview_img(video), :n320)), video %>
+          <%= link_to image_tag(video_preview_img(video)), video %>
         </div>
         <div class='category_content span6'>
           <div class="title"><%= link_to h(video.title), video %></div>
