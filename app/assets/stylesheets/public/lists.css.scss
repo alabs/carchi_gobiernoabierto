@@ -144,6 +144,10 @@ ul.std_list{
 			border-bottom: 1px solid $colorLines;
 			&:hover{
 				background-color: $bgHover;
+				color: white; 
+				a {
+					color: white; 
+				}
 			}
 
 
