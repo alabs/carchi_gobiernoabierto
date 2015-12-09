@@ -48,9 +48,9 @@ class Video < ActiveRecord::Base
   validates_attachment_file_name :subtitles_en, :matches => /srt\Z/
 
   translates :title
-  validates_presence_of :title_es, :title_eu, :title_en, :video_path
+  validates_presence_of :title_es, :youtube_id
   validates_length_of :title_es, :title_eu, :title_en, :maximum => 400, :allow_blank => true
-  validates_format_of :video_path, :with => /\A[a-z0-9_\-\/]+\Z/i, :message => 'El directorio sólo puede tener letras sin tildes, números, "_", "-" y "/".<br/> Ni espacios, ni tildes, ni ñ.'
+  validates_format_of :youtube_id, :with => /\A[\w\-]{11}\z/, :message => 'El ID de YouTube no sigue el formato correcto. Deberia ser solo letras, numeros y los caracteres "-" y "_". Debe tener un total de 11 caracteres'
 
   scope :published, ->(*args) { where(["published_at IS NOT NULL AND published_at <= ?", (args.first || Time.zone.now)])}
   scope :translated, -> { where("show_in_#{I18n.locale}='t'")}

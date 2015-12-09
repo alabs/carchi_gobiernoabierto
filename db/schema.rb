@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140805144637) do
+ActiveRecord::Schema.define(version: 20151203095401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -864,6 +864,7 @@ ActiveRecord::Schema.define(version: 20140805144637) do
     t.integer  "subtitles_en_file_size"
     t.datetime "subtitles_en_updated_at"
     t.integer  "subtitles_en_updated_by"
+    t.string   "youtube_id"
   end
 
   create_table "votes", force: true do |t|

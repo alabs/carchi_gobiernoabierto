@@ -209,7 +209,7 @@ class Admin::VideosController < Sadmin::BaseController
   
   def video_params
     params.require(:video).permit(:title_es, :title_eu, :title_en, :video_path, :tag_list, :featured, 
-      :draft, :published_at, :show_in_es, :show_in_eu, :show_in_en)
+      :draft, :published_at, :show_in_es, :show_in_eu, :show_in_en, :youtube_id)
   end
 
   def video_subtitle_params

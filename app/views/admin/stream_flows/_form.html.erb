@@ -1,25 +1,19 @@
 <%= hidden_field_tag :return_to, @return_to %>
 
 <table class="admin">
+
 <tr>
   <th><label for="stream_flow_title">Título en castellano</label></th>
   <td><%= f.text_field :title_es %></td>
 </tr>
+
 <tr>
-  <th><label for="stream_flow_title">Título en euskera</label></th>
-  <td><%= f.text_field :title_eu %></td>
-</tr>
-<tr>
-  <th><label for="stream_flow_title">Título en inglés</label></th>
-  <td><%= f.text_field :title_en %></td>
-</tr>
-<tr>
-  <th><label for="stream_flow_code">Clip URL</label></th>
-  <td><%= f.text_field :code %></td>
-</tr>
-<tr>
-  <th><label for="stream_flow_mobile_support">Soporte streaming móvil</label></th>
-  <td><%= f.check_box :mobile_support %><label for="stream_flow_mobile_support"><%= t('si') %></label></td>
+  <th><label for="stream_flow_code">¿Cuál es el identificador (ID) de YouTube?</label></th>
+  <td><%= f.text_field :code %>
+        <div class="hint" id="video_hint">
+          Pon el identificador de YouTube que puede encontrarse en la URL o en la pestaña de Share, subpestaña Embed. Por ejemplo para este video: https://www.youtube.com/watch?v=gLvzkSzRwlE el ID sería sólo <em>gLvzkSzRwlE</em>.
+        </div>
+  </td>
 </tr>
 
 <tr>
@@ -48,4 +42,5 @@
 <tr>
   <td colspan="2"><%= submit_tag "Guardar" %></td>
 </tr>
+
 </table>

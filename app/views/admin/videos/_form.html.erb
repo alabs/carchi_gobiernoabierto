@@ -10,34 +10,17 @@
       <td>&nbsp;</td>
     </tr>
   <% end %>
-  
-  <tr>
-    <th>¿Dónde está el video?</th>
-    <td>
-      <%= f.text_field :video_path %>
-      <%= link_to image_tag('admin/hint.gif'), "#", :onclick => "$('video_hint').toggle('blind');return false;" %>
-      
-      <div class="hint">
-        Ficheros con extensión ".flv" (sólo minúsculas).
-        <!-- data: {remote: true, with: "'video_path=' + $('video_video_path').value"}, method: :post,  -->
-        <span class="check"><%= link_to "Comprobar", find_video_admin_videos_path, id: 'find_video_link' %></span>
-        <br/><%= multimedia_content_dir_format %>.
-      </div>
-      
-      <div class="hint" id="video_hint" style="display:none;">
-        <%= multimedia_content_dir_format %>.<br/>
-        Ejemplo: Si pones <em>2009_04_21/parlamento</em> buscaremos, en el directorio <em>2009_04_21</em>
-        los videos <em>parlamento_es.flv</em> para castellano, <em>parlamento_eu.flv</em> para euskera
-        y <em>parlamento_en.flv</em> para inglés. Si el video es común para todos los idiomas, llamadlo
-        <em>parlamento.flv</em>. <br />
-        Buscaremos también la imagen <em>parlamento.jpg</em> que se usará como preview del video o como
-        foto de portada si no hay video. La imagen debe ser de tamaño 320x240px.
-      </div>
-    </td>
-    <td>
-      <span id="find_video"></span>
-    </td>
-  </tr>
+
+    <tr>
+      <th width="25%">¿Cuál es el identificador (ID) de YouTube?</th>
+      <td width="30%">
+        <%= f.text_field "youtube_id".to_sym, :size => 60 %>
+        <div class="hint" id="video_hint">
+          Pon el identificador de YouTube que puede encontrarse en la URL o en la pestaña de Share, subpestaña Embed. Por ejemplo para este video: https://www.youtube.com/watch?v=gLvzkSzRwlE el ID sería sólo <em>gLvzkSzRwlE</em>.
+        </div>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
   
   <tr>
     <th>

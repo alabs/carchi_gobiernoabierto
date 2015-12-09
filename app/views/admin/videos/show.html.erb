@@ -27,7 +27,9 @@
   </span>
 <% end %>
 
+<div class="video_preview4admin">
  <%= render(:partial => '/admin/documents/multimedia/video', :locals => {:item => @video}) %>
+</div>
 
 <div class="video_info4admin">  
   <% if @video.featured %>
@@ -35,8 +37,8 @@
   <% end %>
   
   <p>
-    <b>¿Dónde está el video?</b>
-    <%= @video.video_path %>
+    <b>¿Cuál es el identificador (ID) de YouTube?</b>
+    <%= @video.youtube_id %>
   </p>
   
   <% prev_locale = I18n.locale %>
