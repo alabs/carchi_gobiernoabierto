@@ -144,12 +144,11 @@ ul.std_list{
 			border-bottom: 1px solid $colorLines;
 			&:hover{
 				background-color: $bgHover;
-				color: white; 
+				color: black; 
 				a {
-					color: white; 
+					color: black; 
 				}
 			}
-
 
 			&:last-child{
 				border-bottom: none;
@@ -568,3 +567,16 @@ ul.icons {
     }
   }
 }
+
+.dropdown-menu-content li { 
+	&.item{ 
+		&:hover{
+			color: white !important; 
+			a {
+				color: white !important;
+			}
+		}
+	}
+}
+
+

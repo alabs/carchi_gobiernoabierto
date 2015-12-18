@@ -575,6 +575,13 @@ nav#nav_bottom{
 
 /******* FOOTER *******/
 footer {
+	a {
+		color: white;
+		&:hover {
+			color: white;
+			font-weight: bold;
+		}
+	}
 	background-image: url(image-path("#"));
 	background-position: 50% 25%;
 	background-repeat: no-repeat;
@@ -601,7 +608,7 @@ footer {
 						//background-color: $bgHover;
 						background-color: transparent;
 						text-decoration: none;
-						color: $blueLinksHover;
+						font-weight: bold;
 					}
 
 				}
