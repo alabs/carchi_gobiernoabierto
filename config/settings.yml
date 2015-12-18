@@ -5,9 +5,9 @@ publisher:
   address: "Calle 10 de Agosto entre Sucre y Olmedo, Tulcán"
 email_addresses:
   from: no-contestar@carchi.gob.ec
-  contact: no-contestar@carchi.gob.ec
-  proposal_moderators: no-contestar@carchi.gob.ec
-  orphan_videos_responsibles: no-contestar@carchi.gob.ec
+  contact: info@carchi.gob.ec
+  proposal_moderators: info@carchi.gob.ec
+  orphan_videos_responsibles: info@carchi.gob.ec
 social_networks:
   twitter: https://twitter.com/GADCarchi
   facebook: https://www.facebook.com/carchiprefectura
