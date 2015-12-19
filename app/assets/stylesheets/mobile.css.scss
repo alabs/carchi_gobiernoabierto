@@ -28,3 +28,9 @@ tr.buttons_row{
 label {
   font-weight: bold;
 }
+
+@media (max-width: 1280px) {
+  #header_logos {
+    background-image: none;
+  }
+}
