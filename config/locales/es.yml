@@ -1299,7 +1299,7 @@ es:
     asistentes: Servidores públicos asistentes al acto
     attachment_file: Fichero PDF
     curriculum: Curriculum en PDF
-    en_irekia2: Servidores públicos del sector público que participan en %{site_name}
+    en_irekia2: Servidores del sector público que participan en %{site_name}
       (orden alfabético)
     enlace_guia: Ver datos de contacto en la Guía de Comunicación
     mantente_informado: Mantente informado de toda la actividad de este servidor público
@@ -1307,7 +1307,7 @@ es:
     no_tiene_agenda_publica: No tiene agenda pública
     no_update: "(*) Sin actualización de contenidos"
     title: Servidores públicos
-    title2: Servidores públicos del sector público
+    title2: Servidores del sector público
   programar: Programar
   proposals:
     addressed_to: 'Dirigida a: '
