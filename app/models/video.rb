@@ -76,6 +76,10 @@ class Video < ActiveRecord::Base
   end
   alias_method :approved?, :published?
 
+  def youtube_download_link
+    "http://es.savefrom.net/#url=http://www.youtube.com/watch?v=#{self.youtube_id}"
+  end
+
   # Devuelve el listado de videos disponible para este video. Puede haber varios, uno para cada idioma.
   def videos
     videos = {}

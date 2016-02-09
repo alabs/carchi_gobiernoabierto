@@ -40,15 +40,9 @@
             <%= link_to t('videos.embed'), "#", :onclick => "showEmbedCodePhotoVideoViewer(this); return false;" %> 
           </div>   
 
-          <%- if @video.featured_mpg_video.present? -%>
           <div class="download">
-            <%= link_to t('videos.descargar'), File.join(Document::MULTIMEDIA_URL, @video.featured_mpg_video), :class => "download" %>
+            <%= link_to t('videos.descargar'), @video.youtube_download_link, :class => "download", :target => "_blank" %>
           </div>
-          <%- elsif @video.document_id && @video.document.published? -%>
-          <div class="download">
-            <%= link_to t('descargas'), news_path(@video.document), :class => "download" %>
-          </div>
-          <%- end -%>
           
           <% if @video.transcription_available? %>
             <div class='video_transcription_link'>

@@ -1883,7 +1883,7 @@ en:
       one: 1 vídeo
       other: "%{count} vídeos"
       zero: No hay vídeos
-    descargar: Descargar vídeo MP4
+    descargar: Descargar vídeo
     destacado: Destacado
     duracion: Duración
     embed: Incrustar vídeo
