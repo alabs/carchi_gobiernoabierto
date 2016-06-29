@@ -15,9 +15,6 @@ class AreasController < ApplicationController
   end
 
   def show
-    if params[:id].to_i.eql?(10)
-      params[:id] = 13
-    end
     @area = Area.find(params[:id])
     @context = @area
     prepare_news(@context, request.xhr?)
