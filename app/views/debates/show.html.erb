@@ -1,7 +1,7 @@
 <% content_for :facebook_meta do -%>
   <meta property="og:title" content="<%= Settings.site_name %> - <%= @debate.title.gsub('"', '\'') %>" >
   <meta property="og:description" content="<%= pretty_n_characters_wo_html(@debate.body, 200).gsub('"', '\'') if @debate.body %>" >
-  <meta property="og:image" content="<%= base_url + @debate.cover_image.url if @debate.cover_image? %>" />
+  <meta property="og:image" content="<%= base_url + @debate.cover_image.n372.url if @debate.cover_image? %>" />
 <% end -%>
 
 <%= render :partial => '/shared/contribution_nav' %>
