@@ -31,7 +31,7 @@ class Debate < ActiveRecord::Base
   belongs_to :news, :class_name => "News", :foreign_key => "news_id"
 
   scope :published, ->(*args) {where(["published_at IS NOT NULL AND debates.published_at <= ?", args.first || Time.zone.now])}
-  scope :translated, -> { where("coalesce(title_#{I18n.locale}, '') <> '' AND coalesce(body_#{I18n.locale}, '') <> '' ") }
+  scope :translated, -> { all }
   scope :featured, -> { where(:featured => true).order("published_at DESC").limit(MAX_FEATURED) }
 
   scope :current,  -> { where(["finished_at >= ?", Date.today]).order("finished_at") }
