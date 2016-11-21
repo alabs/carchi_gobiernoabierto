@@ -14,7 +14,7 @@
     <tr>
       <th width="25%">¿A que noticia pertenece?</th>
       <td width="30%">
-	<%= f.select(:document_id, Document.all.collect {|a| [a.title_es, a.id]}) -%>
+	<%= f.select(:document_id, Document.order("title_es ASC").all.collect {|a| [a.title_es, a.id]}) -%>
       </td>
       <td>&nbsp;</td>
     </tr>
