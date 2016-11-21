@@ -1,3 +1,9 @@
+<% content_for :facebook_meta do -%>
+  <meta property="og:title" content="<%= Settings.site_name %> - <%= @debate.title.gsub('"', '\'') %>" >
+  <meta property="og:description" content="<%= pretty_n_characters_wo_html(@debate.body, 200).gsub('"', '\'') if @debate.body %>" >
+  <meta property="og:image" content="<%= base_url + @debate.cover_image.url if @debate.cover_image? %>" />
+<% end -%>
+
 <%= render :partial => '/shared/contribution_nav' %>
 
 <p class="only_for_print page_link"><%= @stage.present? ? debate_url(:id => @debate.id, :stage => @stage.label) : debate_url(:id => @debate.id) %></p>
