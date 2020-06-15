@@ -23,9 +23,9 @@ Gem::Specification.new do |gem|
   end
 
   gem.add_runtime_dependency 'activerecord',  ['>= 3', '< 5']
-  gem.add_runtime_dependency 'activesupport', ['>= 3', '< 5']
-  gem.add_runtime_dependency 'actionpack',    ['>= 3', '< 5']
-  gem.add_runtime_dependency 'traco', ' ~> 3.1.0'
+  gem.add_runtime_dependency 'activesupport', '>= 5.2.4.3'
+  gem.add_runtime_dependency 'actionpack', '>= 5.2.4.3' 
+  gem.add_runtime_dependency 'traco', '~> 3.1.0'
 
   gem.add_development_dependency 'sqlite3'
   gem.add_development_dependency 'mysql2', '~> 0.3.7'
